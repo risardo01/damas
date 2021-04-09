@@ -3,7 +3,11 @@ import sys
 player = 1
 
 
+<<<<<<< HEAD
 class Token(object):
+=======
+class Coken(object):
+>>>>>>> 6de733357135090abd559537bd66b309bbff47c0
 	"""docstring for token"""
 	def __init__(self, coordenada = Coord() ):
 		self.coordenada = coordenada
@@ -14,14 +18,18 @@ class Token(object):
 		
 		pass
 
+<<<<<<< HEAD
 
 ricky = Token(Coord(2,5))
 
 
+=======
+>>>>>>> 6de733357135090abd559537bd66b309bbff47c0
 class Coord(object):
 	"""docstring for coord"""
 	def __init__(self, x = 0, y = 0):
 		self.x = x 
+<<<<<<< HEAD
 		self.y = y
 		#self.setCoord()
 	def getY(self):
@@ -34,6 +42,16 @@ class Coord(object):
 
 x = Coord(10, 8)
 y = x.getY()
+=======
+		self.y = y 
+	def getCoords(self):
+		
+		return (self.x, self.y)
+		pass
+	def setCoord(self, x, y):
+		
+		pass
+>>>>>>> 6de733357135090abd559537bd66b309bbff47c0
 
 class queen(token):
 	"""docstring for queen"""
@@ -43,7 +61,11 @@ class queen(token):
 	def moveback():
 		pass
 
+<<<<<<< HEAD
 def validation(x, y):
+=======
+def validation(ubic):
+>>>>>>> 6de733357135090abd559537bd66b309bbff47c0
 	cantBeUsed = False
 
 	#if ToUication = 0:
@@ -178,7 +200,10 @@ class tab(object):
 	print (tablero2)
 	print (tablero1)
 	print (tablero0)
+<<<<<<< HEAD
+=======
 
+>>>>>>> 6de733357135090abd559537bd66b309bbff47c0
 
 
 
@@ -187,6 +212,13 @@ class tab(object):
 movimientoValido = False
 
 
+<<<<<<< HEAD
+		
+movimientoValido = False
+
+
+=======
+>>>>>>> 6de733357135090abd559537bd66b309bbff47c0
 def turns():
 		
 	print("Player",player,"turn")
