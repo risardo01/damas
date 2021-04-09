@@ -2,21 +2,38 @@ import sys
 
 player = 1
 
-x = 0
-y = 0
 
-
-class token(object):
+class Token(object):
 	"""docstring for token"""
-	def __init__(self, arg):
-		super(token, self).__init__()
-		self.arg = arg
+	def __init__(self, coordenada = Coord() ):
+		self.coordenada = coordenada
 	def eat():
 
 		pass
-	def movefront():
-
+	def move():
+		
 		pass
+
+
+ricky = Token(Coord(2,5))
+
+
+class Coord(object):
+	"""docstring for coord"""
+	def __init__(self, x = 0, y = 0):
+		self.x = x 
+		self.y = y
+		#self.setCoord()
+	def getY(self):
+		return self.y
+		
+	def setCoord(self, x, y):
+		self.x = x 
+		self.y = y
+		return
+
+x = Coord(10, 8)
+y = x.getY()
 
 class queen(token):
 	"""docstring for queen"""
@@ -26,14 +43,14 @@ class queen(token):
 	def moveback():
 		pass
 
-def validation(ubic):
+def validation(x, y):
 	cantBeUsed = False
 
-	if ToUication = 0:
-		cantBeUsed = True	
-	else:
-		cantBeUsed = False
-	return cantBeUsed
+	#if ToUication = 0:
+	#	cantBeUsed = True	
+	#else:
+	#	cantBeUsed = False
+	#return cantBeUsed
 	pass
 
 
@@ -165,14 +182,7 @@ class tab(object):
 
 
 
-class coord(object):
-	"""docstring for coord"""
-	def __init__(self, arg):
-		super(coord, self).__init__()
-		self.arg = arg
-	def tabUbication():
-		
-		pass
+
 		
 movimientoValido = False
 
