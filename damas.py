@@ -2,21 +2,6 @@ import sys
 
 player = 1
 
-
-class Token(object):
-	"""docstring for token"""
-	def __init__(self, coordenada = Coord() ):
-		self.coordenada = coordenada
-	def eat():
-
-		pass
-	def move():
-		
-		pass
-
-ricky = Token(Coord(2,5))
-
-
 class Coord(object):
 	"""docstring for coord"""
 	def __init__(self, x = 0, y = 0):
@@ -31,14 +16,29 @@ class Coord(object):
 		self.y = y
 		return
 
+class Token(object):
+	"""docstring for token"""
+	def __init__(self, coordenada = Coord() ):
+		self.coordenada = coordenada
+	def eat():
+
+		pass
+	def move():
+		
+		pass
+
+#ricky = Token(Coord(2,5))
+
+
+
+
 x = Coord(10, 8)
 y = x.getY()
 
-class queen(token):
+class queen(Token):
 	"""docstring for queen"""
-	def __init__(self, arg):
-		super(queen, self).__init__()
-		self.arg = arg
+	def __init__(self):
+		
 	def moveback():
 		pass
 
