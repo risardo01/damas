@@ -19,12 +19,18 @@ class Coord(object):
 		self.x = self.x + coord.getX()
 		self.y = self.y + coord.getY()
 
+class Player (object):
+	def __init__(self, num):
+		self.num = num
+	def getNumPlayer(self):
+		return self.num
+	def setNumPlayer(self, num):
+		self.num = num
 
 
+#cor1+cor2
 
-cor1+cor2
 
-'''
 class Board(object):
 	"""docstring for tab"""
 	def __init__(self, white, black):
@@ -40,25 +46,21 @@ class Token(object):
 		self.coordenada = coordenada
 	def eat():
 		
-		pass
 	def move(self, coordenada):
 		self.coordenada.setCoord(coordenada)
-		pass
 
 #ricky = Token(Coord(2,5))
 
 
 
 
-x = Coord(10, 8)
-y = x.getY()
 
 class queen(Token):
 	"""docstring for queen"""
-	def __init__(self):
+	def __init_subclass__(self):
 		
 	def moveback():
-		pass
+		
 
 def validation(x, y):
 	cantBeUsed = False
@@ -68,7 +70,6 @@ def validation(x, y):
 	#else:
 	#	cantBeUsed = False
 	#return cantBeUsed
-	pass
 
 
 def turns():
@@ -98,5 +99,4 @@ def turns():
 	y = int(iny)
 	if (y > 7) or (y < 0):
 		sys.exit("Numero invalido")
-	pass
-'''
+	
