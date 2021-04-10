@@ -10,21 +10,39 @@ class Coord(object):
 		#self.setCoord()
 	def getY(self):
 		return self.y
-		
-	def setCoord(self, x, y):
-		self.x = x 
-		self.y = y
-		return
+	def getX(self):
+		return self.x
+	def setCoord(self, coord):
+		self.x = coord.getX()
+		self.y = coord.getY()
+	def __add__(self, coord):
+		self.x = self.x + coord.getX()
+		self.y = self.y + coord.getY()
+
+
+
+
+cor1+cor2
+
+'''
+class Board(object):
+	"""docstring for tab"""
+	def __init__(self, white, black):
+		self.white = white
+		self.black = black
+	def boardUpdate(self):
+
+
 
 class Token(object):
 	"""docstring for token"""
-	def __init__(self, coordenada = Coord() ):
+	def __init__(self, coordenada = Coord()):
 		self.coordenada = coordenada
 	def eat():
-
-		pass
-	def move():
 		
+		pass
+	def move(self, coordenada):
+		self.coordenada.setCoord(coordenada)
 		pass
 
 #ricky = Token(Coord(2,5))
@@ -52,15 +70,6 @@ def validation(x, y):
 	#return cantBeUsed
 	pass
 
-
-
-class tab(object):
-	"""docstring for tab"""
-	def __init__(self, arg):
-		super(tab, self).__init__()
-		self.arg = arg
-		
-movimientoValido = False
 
 def turns():
 		
@@ -90,3 +99,4 @@ def turns():
 	if (y > 7) or (y < 0):
 		sys.exit("Numero invalido")
 	pass
+'''
