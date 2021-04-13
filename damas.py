@@ -32,9 +32,9 @@ class Player (object):
 
 class Token(object):
 	"""docstring for token"""
-	def __init__(self, coordenada = Coord(), color):
+	def __init__(self, coordenada = Coord(), color = True):
 		self.coordenada = coordenada
-		self.color = True #True = White --- False = Red
+		self.color = color #True = White --- False = Red
 	#def eat(self):
 		
 	def move(self, coordenada):
@@ -66,17 +66,17 @@ class Board(object):
 		self.red_token.append( Token(Coord(5, 6), True) ) #7
 		self.red_token.append( Token(Coord(7, 6), True) ) #8
 
-	def __str__(self):
-		s
-		for y in xrange(0,7):
-			for x in xrange(0,7):
-				for i in xrange(0,7)
-					if x, y == self.red_token[i]:
+	def Draw(self):
+		s = ""
+		for y in range(0,7):
+			for x in range(0,7):
+				for i in range(0,7):
+					if (x == self.red_token[i].Token.getX) and (y == self.red_token[i].Token.getY):
 						s+="0"
-					if x, y == self.white_token[i]:
+					if (x == self.white_token[i].Token.getX) and (y == self.white_token[i].Token.getY):
 						s+="0"
-
-				
+				s+="-"
+			s+="\n"	
 		return s
 
 	def boardDraw(self):
@@ -84,7 +84,7 @@ class Board(object):
 		print(tablero)
 
 dic = Board()
-print(dic.boardDraw())
+print(dic.Draw())
 		
 '''
 class queen(Token):
@@ -106,7 +106,7 @@ def validation():
 
 def turns():
 		
-	print("Player",player,"turn")
+	print("Player ",player,"turn")
 
 	inx = input("Enter the x coord")
 	x = int(inx)
