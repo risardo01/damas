@@ -30,39 +30,71 @@ class Player (object):
 
 #cor1+cor2
 
-
-class Board(object):
-	"""docstring for tab"""
-	def __init__(self, white, black):
-		self.white = white
-		self.black = black
-	def boardUpdate(self):
-
-
-
 class Token(object):
 	"""docstring for token"""
-	def __init__(self, coordenada = Coord()):
+	def __init__(self, coordenada = Coord(), color):
 		self.coordenada = coordenada
-	def eat():
+		self.color = True #True = White --- False = Red
+	#def eat(self):
 		
 	def move(self, coordenada):
 		self.coordenada.setCoord(coordenada)
-
+		
 #ricky = Token(Coord(2,5))
 
+class Board(object):
+	"""docstring for tab"""
+	def __init__(self):
+		self.red_token = []
+		self.white_token = []
+		
+		self.red_token.append( Token(Coord(0, 0), False) ) #1
+		self.red_token.append( Token(Coord(2, 0), False) ) #2
+		self.red_token.append( Token(Coord(4, 0), False) ) #3 
+		self.red_token.append( Token(Coord(6, 0), False) ) #4
+		self.red_token.append( Token(Coord(1, 1), False) ) #5
+		self.red_token.append( Token(Coord(3, 1), False) ) #6
+		self.red_token.append( Token(Coord(5, 1), False) ) #7
+		self.red_token.append( Token(Coord(7, 1), False) ) #8
 
+		self.red_token.append( Token(Coord(0, 7), True) ) #1
+		self.red_token.append( Token(Coord(2, 7), True) ) #2
+		self.red_token.append( Token(Coord(4, 7), True) ) #3 
+		self.red_token.append( Token(Coord(6, 7), True) ) #4
+		self.red_token.append( Token(Coord(1, 6), True) ) #5
+		self.red_token.append( Token(Coord(3, 6), True) ) #6
+		self.red_token.append( Token(Coord(5, 6), True) ) #7
+		self.red_token.append( Token(Coord(7, 6), True) ) #8
 
+	def __str__(self):
+		s
+		for y in xrange(0,7):
+			for x in xrange(0,7):
+				for i in xrange(0,7)
+					if x, y == self.red_token[i]:
+						s+="0"
+					if x, y == self.white_token[i]:
+						s+="0"
 
+				
+		return s
 
+	def boardDraw(self):
+		
+		print(tablero)
+
+dic = Board()
+print(dic.boardDraw())
+		
+'''
 class queen(Token):
 	"""docstring for queen"""
-	def __init_subclass__(self):
+	def __init__(self):
 		
-	def moveback():
+	#def moveback():
 		
 
-def validation(x, y):
+def validation():
 	cantBeUsed = False
 
 	#if ToUication = 0:
@@ -70,7 +102,7 @@ def validation(x, y):
 	#else:
 	#	cantBeUsed = False
 	#return cantBeUsed
-
+'''
 
 def turns():
 		
