@@ -71,9 +71,9 @@ class Board(object):
 		for y in range(0,7):
 			for x in range(0,7):
 				for i in range(0,7):
-					if (x == self.red_token[i].Token.getX) and (y == self.red_token[i].Token.getY):
+					if (x == self.red_token[i].coordenada.getX()) and (y == self.red_token[i].coordenada.getY()):
 						s+="0"
-					if (x == self.white_token[i].Token.getX) and (y == self.white_token[i].Token.getY):
+					if (x == self.white_token[i].coordenada.getX()) and (y == self.white_token[i].coordenada.getY()):
 						s+="0"
 				s+="-"
 			s+="\n"	
